@@ -32,13 +32,31 @@ Vale lembrar que a ideia da pasta ```pages``` é ter, dentro dela, uma pasta par
 
 ## **Baixando o Projeto em seu Computador**
 
-1. Abra um terminal
+1. Instale o git no seu computador
 
-2. Navegue até a pasta onde você deseja salvar o projeto com o comando ```cd```
+> Instruções de instalação: https://www.atlassian.com/br/git/tutorials/install-git
+
+> Para saber mais sobre git, recomendo a documentação do Bitbucket: https://www.atlassian.com/br/git/tutorials
+
+2. Abra um terminal 
+
+3. Caso você ainda não tenha uma conta no [GitHub](https://github.com/), crie uma
+
+4. Configure suas credenciais no git rodando os comandos:
+
+    ```
+    git config --global user.name "<insira seu nome aqui>"
+    
+    git config --global user.email <insira o e-mail da sua conta no GitHub aqui>
+    ```
+
+5. Navegue até a pasta onde você deseja salvar o projeto com o comando ```cd```
 
 > Alternativamente, você pode entrar no seu gerenciador de arquivos, clicar com o botão direito na pasta em que você deseja salvar o projeto, e selecionar a opção "Abrir no Terminal"
 
-3. Rode o seguinte comando: ```git clone ``` 
+6. Rode o seguinte comando: ```git clone https://github.com/luisacolafati/treinamento-html-css-2022.git```
+
+> Isso já deve baixar o projeto na pasta que você escolheu! Com isso, é só abrir o projeto em sua IDE favorita e começar a trabalhar nele!
 
 ## **Instalação e Setup**
 
