@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Treinamento HTML/CSS</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="../../../node_modules/@fortawesome/fontawesome-free/css/all.css" />
+    </head>
+
+    <body>
+        
+        <div class="header" id="header">
+            <a href="https://www.conpec.com.br/">
+                <img src="../../assets/logoConpec.png" alt="Logo da Conpec">
+            </a>
+            <div class="headerButtonsContainer">
+                <a class="headerButton" href="#capeImage">Home</a>
+                <a class="headerButton" href="#servicos">Serviços</a>
+                <a class="headerButton" href="#contato">Contato</a>
+                <a href="https://www.unicamp.br/unicamp/">
+                    <img src="../../assets/logoUnicamp.png" alt="Logo da Universidade Estadual de Campinas UNICAMP">
+                </a>
+            </div>
+        </div>
+
+        <img id="capeImage" src="../../assets/capa.jpeg" style="width: 100%;" alt="Conpec">
+
+        <div class="servicos" id="servicos">
+            <div class="servicosContent">
+                <p class="title">O que podemos fazer por você?</p>
+            </div>
+            
+            <div class="servicosContent">
+                <div class="card">
+                    <i class="fa-regular fa-lightbulb fa-5x" style="color: #e54a1d;"></i>
+                    <p class="cardTitle">Consultoria</p>
+                    <div class="cardText">
+                        Saiba qual é a melhor tecnologia para seu projeto com nosso serviço de consultoria em TI
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-pencil fa-5x" style="color: #e54a1d;"></i>
+                    <p class="cardTitle">Prototipação</p>
+                    <div class="cardText">
+                        Arquitetamos seu produto, desenvolvemos seu conceito e identidade visual
+                    </div>
+                </div>
+
+                <div class="card">
+                    <i class="fa-solid fa-laptop fa-5x" style="color: #e54a1d;"></i>
+                    <p class="cardTitle">Desenvolvimento</p>
+                    <div class="cardText">
+                        Com o design pronto, nosso time de programadores irá dar vida ao projeto usando tecnologias de ponta
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="contact" id="contato">
+            <div class="row">
+                <p class="title">Entre em contato!</p>
+            </div>
+
+            <div class="contactForm">
+                <form action="" method="">
+                    
+                    <div class="contactInput">
+                        <label class="formElement">Nome Completo:</label>
+                        <input type="text" class="formElement"/>
+                    </div>
+
+                    <div class="contactInput">
+                        <label class="formElement">Email:</label>
+                        <input type="text" class="formElement"/>
+                    </div>
+
+                    <div class="contactInput">
+                        <label class="formElement">Tipo de Projeto:</label>
+                        <select class="formElement">
+                            <option value="Consultoria">Consultoria</option>
+                            <option value="Prototipacao">Prototipação</option>
+                            <option value="Desenvolvimento">Desenvolvimento</option>
+                            <option value="PrototipoDesenvolvimento">Prototipação + Desenvolvimento</option>
+                        </select>
+                    </div>
+
+                    <div class="contactInput">
+                        <label class="formElement">Telefone:</label>
+                        <input type="text" class="formElement"/>
+                    </div>
+
+                    <div class="contactInput">
+                        <label class="formElement">Nos conte mais sobre sua ideia:</label>
+                        <textarea class="formElement"></textarea>
+                    </div>
+
+                    <button id="formButton" class="formButton" type="submit" onclick="test()">
+                        Enviar
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="footer">
+        <a href="https://www.instagram.com/conpec.ej/">
+                    <i class="fa-brands fa-instagram fa-2x" style="color: white"></i>
+            </a>
+            
+            <a href="https://pt-br.facebook.com/conpec.ej/">
+                <i class="fa-brands fa-facebook-square fa-2x" style="color: white"></i>
+            </a>
+
+            <a href="https://br.linkedin.com/company/conpec">
+                <i class="fa-brands fa-linkedin fa-2x" style="color: white"></i>
+            </a>
+
+            <a href="https://www.youtube.com/channel/UC7isx7P91iPMOY7nNYg3uJg">
+                <i class="fa-brands fa-youtube fa-2x" style="color: white"></i>
+            </a>
+        </div>
+    
+    </body>
+
+</html>

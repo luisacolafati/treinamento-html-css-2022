@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root {
+    --orange: #e54a1d;
+    --pink: #e54e45;
+    --white: #fff;
+    --black: #000;
+    --gray: gray;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+.column,
+.card,
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;   
+}
+
+.row,
+.header,
+.headerButtonsContainer,
+.servicos,
+.servicosContent,
+.contact,
+.formButton,
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120%;
+    
+    margin: 0;
+    height: 100%;
+
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 185%;
+}
+
+.header {
+    background-image: linear-gradient(to right, var(--orange), var(--pink));
+    width: 100%;
+    height: 10%;
+
+    position: fixed;
+    top: 0;
+
+    justify-content: space-around;
+}
+
+.header:active {
+    opacity: 10%;
+}
+
+.headerButtonsContainer {
+    width: 35%;
+    height: 5em;
+    margin-left: 45%;
+
+    justify-content: space-between;
+}
+
+.headerButton {
+    color: var(--white);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.headerButton:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.headerButton:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.servicos {
+    width: 94%;
+    padding: 3%;
+
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.servicosContent {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    justify-content: space-between;
+}
+
+.card {
+    width: 18em;
+    padding: 8% 1% 8% 1%;
+    margin: 2%;
+
+    border-radius: 1%;
+    box-shadow: 0 0 1em var(--gray);
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cardTitle {
+    font-weight: bold;
+    font-size: 145%;
+    padding-top: 10%;
+}
+
+.cardText {
+    width: 225px;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.contact {
+    color: var(--white);
+    background-color: var(--pink);
+    
+    justify-content: space-around;
+}
+
+.contactForm {
+    justify-content: space-around;
+    align-items: flex-end;
+    
+    padding-top: 5%;
+    padding-bottom: 8%;
+}
+
+.contactInput {
+    padding-bottom: 10%;
+}
+
+.formElement {
+    width: 100%;
+    padding-bottom: 5%;
+    font-weight: bold;
+}
+
+input[type=text] {
+    color: var(--white);
+    border: none;
+    border-bottom: 2px solid var(--white);
+    background-color: var(--pink);
+    outline: none;
+}
+
+textarea {
+    color: var(--white);
+    height: 8em;
+    margin-top: 5%;
+    border: 2px solid var(--white);
+    background-color: var(--pink);
+    outline: none;
+}
+
+select {
+    color: var(--white);
+    margin-top: 5%;
+    border: 2px solid var(--white);
+    background-color: var(--pink);
+    outline: none;
+}
+
+input[type=button] {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120%;
+    font-weight: bolder;
+
+    color: var(--pink);
+    background-color: var(--white);
+    
+    border: none;
+    border-radius: 15px;
+    
+    width: 40%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-bottom: 12%;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formButton {
+    font-size: 100%;
+    color: var(--pink);
+    background-color: var(--white);
+    
+    width: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    margin-bottom: 10%;
+
+    border: none;
+    border-radius: 1em;
+
+    justify-content: space-around;
+}
+
+.footer {
+    background-color: var(--orange);
+    width: 30%;
+    height: 7em;
+    
+    padding-left: 35%;
+    padding-right: 35%;
+
+    justify-content: space-around;
+}
